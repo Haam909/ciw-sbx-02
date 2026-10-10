@@ -1,0 +1,9 @@
+components:
+  - name: api
+    runtime: dotnet
+    target: app-service
+    project: src/Api/Api.csproj
+    dotnet-version: '10.0.x'
+    test-project: tests/Api.Tests/Api.Tests.csproj
+    app-test: api-test
+    app-prod: api
